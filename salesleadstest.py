@@ -549,7 +549,7 @@ class SalesLeadsTestApp:
                     {"role": "user", "content": full_prompt}
                 ],
                 "temperature": 0.7,
-                "max_tokens": 128000
+                "max_tokens": 65536
             }
             
             response = requests.post(url, headers=headers, json=data, timeout=120)
